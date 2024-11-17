@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<opml version="2.0" xmlns:rssguard="https://github.com/martinrotter/rssguard">
+  <head>
+    <title>RSS Guard</title>
+    <dateCreated>Sun, 17 Nov 2024 18:08:01 GMT</dateCreated>
+  </head>
+  <body>
+    <outline description="News and updates on RSS Guard." text="RSS Guard">
+      <outline description="" encoding="UTF-8" rssguard:postProcess="" rssguard:xmlUrlType="0" text="Recent Commits to rssguard:master" title="Recent Commits to rssguard:master" type="rss" version="ATOM" xmlUrl="https://github.com/martinrotter/rssguard/commits/master.atom"/>
+      <outline description="Recent RSS Guard Activity" encoding="UTF-8" rssguard:postProcess="" rssguard:xmlUrlType="0" text="RSS Guard Localization Activity" title="RSS Guard Localization Activity" type="rss" version="RSS" xmlUrl="https://crowdin.com/project/rssguard/activity"/>
+    </outline>
+    <outline description="CVE et nouvelles quant aux vulnérabilités des OS" text="Vulnérabilités">
+      <outline description="" encoding="utf-8" rssguard:postProcess="" rssguard:xmlUrlType="0" text="MSRC Security Update Guide" title="MSRC Security Update Guide" type="rss" version="RSS" xmlUrl="https://api.msrc.microsoft.com/update-guide/rss"/>
+    </outline>
+    <outline description="Pages archivées" text="Archivés"/>
+    <outline description="A Linux and Open Source Web Portal" encoding="UTF-8" rssguard:postProcess="" rssguard:xmlUrlType="0" text="It's FOSS" title="It's FOSS" type="rss" version="RSS" xmlUrl="https://itsfoss.com/feed"/>
+    <outline description="" encoding="UTF-8" rssguard:postProcess="" rssguard:xmlUrlType="0" text="Louis IT ! Informatique &amp; Administration Systèmes" title="Louis IT ! Informatique &amp; Administration Systèmes" type="rss" version="ATOM" xmlUrl="https://invidious.fdn.fr/feed/channel/UCtYRn3VO0MCFdyS-5MEovyQ"/>
+  </body>
+</opml>
