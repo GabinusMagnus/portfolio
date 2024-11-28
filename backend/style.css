@@ -373,41 +373,64 @@ blockquote {
   color: rgb(0, 0, 0);
 }
 
+/* Onglets */
 .tabs {
-  list-style: none; 
-  position: relative; 
-  margin: 0;
-  padding: 0;
-  width: 100%;  
-  font-family: sans-serif
-}
-.tabs li {
-  display: inline-block;
-}
-.tabs input[type="radio"] {
-  display: none;
-}
-.tabs label {
-  display: block;
-  cursor: pointer;
-  padding: 10px 15px;
-  border: 2px solid black;
-  border-bottom: 0;
-  border-radius: 3px 3px 0 0;
-}
-.tabs .tab-panel {  
-  display: none;
-  overflow: hidden;
-  width: 100%;  
-  position: absolute;
-  left: 0;
-  border-top: 2px solid black;
+  height: 100%;
+  min-height: 250px;
+  position: relative;
 }
 
-.tabs [id^="tab"]:checked + label {   
-  background-color: black;
-  color: #fff;
+/* Each tab items (includes heading & content) */
+.tab-item {
+  display: inline;
 }
-.tabs [id^="tab"]:checked ~ [id^="tab-panel"] {
-  display: block;
+
+/* Hide the default radio inputs */
+.tab-input {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* The main tab headings */
+.tab-label {
+  background: white;
+  box-shadow: inset 0 -4px 4px rgba(0,0,0,0.02);
+  color: lightgrey;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin: 0 5px 0 0;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+/* The inner tab content */
+.tab-content {
+  background: white;
+  bottom: 0;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.02);
+  left: 0;
+  overflow: scroll;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: 0;
+}
+
+/* Style the currently selected tab label */
+.tab-input:checked + .tab-label {
+  border: 1px solid #eee;
+  border-bottom: 0;
+  box-shadow: 0 -6px 8px rgba(0,0,0,0.02);
+  color: #268bd2;
+  z-index: 2;
+}
+
+/* Show the currently selected tab content */
+.tab-input:checked ~ .tab-content {
+  border: 1px solid #eee;
+  z-index: 1;
 }
