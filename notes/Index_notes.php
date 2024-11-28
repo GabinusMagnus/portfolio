@@ -13,12 +13,17 @@ Toutes les notes, toute la documentation accumulée au cours des deux ans de BTS
 <details>
     <summary>
         Notes de première année :
+        <ul>
         <?php
-        $dossiers_1 = print_r(scandir('./'));
-        foreach ($dossiers_1 as $note1) {
-            echo "<a href='" + $note1 + "'>" + $note1 ;
+        $repertoire1 = scandir('./Première année');
+        array_diff($repertoire1, array('..', '.'));
+        foreach ($repertoire1 as $nom) {
+            if ($nom != '.' and $nom != '..') {
+            echo "<li><a href='" . "Première année/" . $nom . "'>" . $nom . "</a></li>";
+            }
         };
         ?>
+        </ul>
     </summary>
 </detail>
 </div>

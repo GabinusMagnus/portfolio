@@ -1,0 +1,111 @@
+Building configuration...
+
+Current configuration : 1726 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+aaa new-model
+aaa authentication login default local
+!
+hostname SwitchEgnaro
+!
+enable secret 5 $1$mERr$KxRiopOwxh.kFnXaVxFtC1
+!
+!
+!
+ip ssh version 2
+ip ssh time-out 10
+ip domain-name egnaro.local
+ip name-server 192.168.1.253
+!
+username admin secret 5 $1$mERr$KxRiopOwxh.kFnXaVxFtC1
+username etudiant privilege 1 password 7 0803585D1A100A45425A5B
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ ip address 192.168.1.1 255.255.255.0
+!
+ip default-gateway 192.168.1.254
+!
+banner motd ^CACCES RESERVE^C
+!
+!
+!
+ip access-list extended SSH_EGNARO_SWITCH
+ permit tcp 0.0.0.2 255.255.255.0 any eq 22
+ip access-list extended SSH_EGNARO
+ permit tcp 0.0.0.2 255.255.255.0 any eq 22
+ permit tcp 0.0.0.1 255.255.255.0 any eq 22
+line con 0
+ login local
+!
+line vty 0 4
+ password 7 0803585D1A100A45425A5B
+ login local
+line vty 5 15
+ password 7 0803585D1A100A45425A5B
+ login local
+!
+!
+!
+!
+end

@@ -1,0 +1,82 @@
+html 
+{
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	text-align: center;
+	background-color: #BBB;
+	background-image: url(img/hack.png); /*background2.jpg*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+input 
+{
+	background-color: #DDD;
+	border-radius: 5px;
+	border: 0px;
+}
+
+h1
+{
+	color: #E33640;
+}
+
+h2
+{
+	font-size: 30px;
+	color: #343F5D;
+}
+h3 
+{
+  color: #e33640; /* Rouge logo lesage */
+  font-size: 16px;
+}
+
+p{color:#d0d0d0;}
+
+input{background-color: #4CAF50;} 
+
+.bouton {background-color: #e33640;} /* Rouge logo lesage */
+
+.Col1 {
+  position: absolute;
+  left: 10px;
+}
+
+.Col2 {
+  position: absolute;
+  left: 380px;
+}
+
+.Col3 {
+  position: absolute;
+  left: 760px;
+}
+
+.Adroite {
+  position: absolute;
+  right: 10px;
+}
+
+.Agauche {
+  position: absolute;
+  left: 10px;
+}
+.calcul 
+{
+	position: absolute;
+	left: 100px;
+}
+
+
+.resultat {
+	background-color: #4CAF50;
+  color: #e33640;
+}
+/*
+.lesage 
+{
+	position: absolute;
+	right: 10px;
+}
+*/

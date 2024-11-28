@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>MD5 Gene</title>
+		<link rel="stylesheet" type="text/css" href="crackpass.css">
+	</head>
+
+	<body>
+		<img src="img/Logo_Lycee_Lesage_Vannes.png" width ="150px" class="Agauche">
+		<img src="img/sti2d.png" width ="100px" class="Adroite">
+
+		<script language="JavaScript" src="md5.js"></script>
+		<script language="JavaScript" src="sha1.js"></script>
+	
+		<h2><strong><center>MD5 Hash generator</center></strong></h2>
+
+		<div class="Col1">
+			<br><br>
+			<h3>password to be generated:</h3>
+			<P><A href="crackpass.html" title="Back to Crack Lesage"><IMG src="img/pirate.png" height="150px" alt="B" ></A>
+			<p>input the password to be hashed :</p>
+			<p><input type=text id="password" size="40"></p>
+		</div>
+
+		<div class="Col2">
+			<br><br>
+			<h3> MD5 Generator:</h3>
+			<p>Clic on the bellow button to generate MD5 Hash :</p>
+			<p><input type=button value=MD5   class="bouton" onclick="MD5Hash.value = calcMD5(password.value)"></p> 
+			<p>The MD5 Hash </p>
+			<input  type=text id="MD5Hash" size="38" class="resultat">			
+		</div>
+
+		<div class="Col3"> 
+			
+		</div>
+
+
+
+	</body>
+</html>

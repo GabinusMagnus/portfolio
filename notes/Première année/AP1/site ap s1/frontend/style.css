@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav  {
+    padding: 15px;
+}
+.main h2 {
+    font-size: 1rem;
+}
+body {
+    background: #212529;
+}
+.main {
+    color: rgb(238, 238, 238);
+}
+.navbar-expand-lg {
+    padding: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>CracK Lesage</title>
+		<link rel="stylesheet" type="text/css" href="crackpass.css">
+	</head>
+
+	<body>
+		<img src="img/Logo_Lycee_Lesage_Vannes.png" width ="150px" class="Agauche">
+		<img src="img/sti2d.png" width ="100px" class="Adroite">
+		<br><br>
+		<h2><strong><center>Crack a password by social ingineering</center></strong></h2>
+
+		<div class="Col1">
+			<h3>mot de passe à decrypter:</h3>
+			<P><A href="HashGenerator.html" title="click if a Hash is neaded"><IMG src="img/pirate.png" height="150px" alt="B" ></A>
+			<p>Coller la copie du Hash :</p>
+			<p><input type=text id="CopieHash" size="40"></p>
+		</div>
+
+		<div class="Col2">
+			<h3> social engineering DATA:</h3>
+			<p>Nom : <input  id="nom" size="13"></p>
+			<p>Prénon : <input  id="prenom" size="13"></p>
+			<p>Ville : <input  id="ville" size="13"></p>
+			<p>date naissance jour mois : <input type=text id="jour" size="1"><input type=text id="mois" size="1"></p>
+			<p>date naissance année : <input type=text id="dizans" size="1"><input type=text id="ans" size="1"></p>
+			<h3>Code à la noix  :</h3>	
+			<p> par exemple azerty : <input  id="noix" size="13"></p>
+			<p><input type=button value=CracK  id="GO" class="bouton"></p> 			
+		</div>
+
+		<div class="Col3"> 
+			<h3>Le mot de passe est  :</h3>	
+			<p><input disabled type=text id="MDP" size="40" class="resultat"></p>	
+			<p>il a été trouvé en  <input disabled type=text id="NbEssai" size="5" class="resultat"> essais</p>	
+			<p>Soit une durée de <input disabled type=text id="duree" size="5" class="resultat"> mS</p>	
+			<h3>Hash trouvé:</h3>	
+			<p><input disabled type=text id="HashTest" size="40" class="resultat"></p>
+		</div>
+
+		<script type="text/javascript" src="crackpass.js"></script>
+		<script language="JavaScript" src="md5.js"></script>
+
+	</body>
+</html>
