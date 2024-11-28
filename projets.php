@@ -13,23 +13,28 @@
     <a href="mentions_legales.html">Mentions légales</a>
 </div>
 <h1>Projets Professionnels :</h1>
-<div class="tab-wrap">
-    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-    <label for="tab1">Short</label>
-    
-    <input type="radio" id="tab2" name="tabGroup1" class="tab">
-    <label for="tab2">Medium</label>
-    
-    <input type="radio" id="tab3" name="tabGroup1" class="tab">
-    <label for="tab3">Long</label>
-    
-    <div class="tab__content">
-        TAB ONE CONTENT
+
+
+<ul class="tabs">
+  <li>
+    <input id="tab1" type="radio" name="tabs" checked />
+    <label for="tab1">Description</label>
+    <div id="tab-panel1" class="tab-panel">
+      <p>This is the content for the description panel.</p>
     </div>
-    <div class="tab__content">
-      TAB Two CONTENT
+  </li>
+  <li>
+    <input id="tab2" type="radio" name="tabs" />
+    <label for="tab2">Specifications</label>
+    <div id="tab-panel2" class="tab-panel">
+      <p>Specifications content can go here.</p>
     </div>
-    <div class="tab__content">
-      TAB THREE CONTENT
+  </li>  
+  <li>
+    <input id="tab3" type="radio" name="tabs" />
+    <label for="tab3">Reviews</label>
+    <div id="tab-panel3" class="tab-panel">
+      <p>Here we can display some reviews from our customers.</p>
     </div>
-</div>
+  </li>     
+</ul>
