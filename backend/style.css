@@ -372,3 +372,10 @@ blockquote {
   background-color: #63d1fd;
   color: rgb(0, 0, 0);
 }
+
+.tab-content {
+  display: none;
+}
+.tab-content:target {
+  display: block;
+}
