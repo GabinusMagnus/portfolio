@@ -16,9 +16,8 @@ Toutes les notes, toute la documentation accumulée au cours des deux ans de BTS
         <?php
         $dossiers_1 = print_r(scandir('./'));
         foreach ($dossiers_1 as $note1) {
-            echo "<a href='" + $note1 + "'>" + $note1
+            echo "<a href='" + $note1 + "'>" + $note1 ;
         };
-
         ?>
     </summary>
 </detail>
