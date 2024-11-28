@@ -13,25 +13,11 @@
     <a href="mentions_legales.html">Mentions légales</a>
 </div>
 <h1>Projets Professionnels :</h1>
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-
-<!-- Tab content -->
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
+<ul id="menu">
+    <li><a href="#tab1">First tab</a></li>
+    <li><a href="#tab2">Second tab</a></li>
+    <li><a href="#tab3">Third tab</a></li>
+</ul>
+<div id="tab1" class="tab-content">Content of first tab</div>
+<div id="tab2" class="tab-content">Content of second tab</div>
+<div id="tab3" class="tab-content">Content of third tab</div>
