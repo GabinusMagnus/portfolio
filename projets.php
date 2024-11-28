@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="backend/style.css">
+</head>
+<body>
+<div class="topnav">
+    <a href="index.html/#accueil">Accueil</a>
+    <a href="index.html/#qualification">Qualification</a>
+    <a href="index.html/#veille">Veille</a>
+    <a href="notes/Index_notes.php">Documentation</a>
+    <a href="mentions_legales.html">Mentions légales</a>
+</div>
+<h1>Projets Professionnels :</h1>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
