@@ -16,23 +16,23 @@
 <!-- Importation des fonctions javascript pour définir les onglets -->
 <script src="backend/fonctions.js"></script>
 <div class="tab">
-  <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S1')">London</button>
-  <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S2')">Paris</button>
-  <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S1')">Tokyo</button>
+  <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S1')">Première année,<br>premier semestre</button>
+  <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S2')">Première année,<br>second semestre</button>
+  <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S1')">Deuxième année,<br>premier semestre</button>
 </div>
 
 <!-- Tab content -->
 <div id="AP1S1" class="tabcontent">
   <h3>Année 1, semestre 1</h3>
-  <p>London is the capital city of England.</p>
+  <div class="paper with-shadows">Infrastructure GELTRAM<br>Mise à disposition d'un serveur DHCP et web, dans deux vlans. C'est ici que l'on parle de collaboration et de documentation (GDrive, Trello,...).</div>
 </div>
 
 <div id="AP1S2" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
+  <h3>Année 1, semestre 2</h3>
+  <div class="paper with-shadows">Amélioration de l'infrastructure GELTRAM.</div>
 </div>
 
 <div id="AP2S1" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <h3>Atelier, premier semestre de la deuxième année</h3>
+  <div class="paper with-shadows">Test de l'infra : Kali (hping, pour DHCP flooding sur le serveur web)</div>
 </div>
