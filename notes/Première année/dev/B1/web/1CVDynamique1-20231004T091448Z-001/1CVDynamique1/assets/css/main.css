@@ -1,0 +1,72 @@
+.banner {
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.bannerimg {
+	text-align: center;
+}
+
+img {
+	width: 10%;
+	height: 100%;
+
+}
+
+.stage{
+	text-align: center;
+}
+
+.cv{
+	background-color: #f0f4f5;
+}
+
+.carre{
+	background-color: #f0f4f5
+}
+
+.footer{
+	text-align: center;
+}
+
+.tableCV{
+	list-style: none;
+}
+
+.espace {
+	margin-bottom: 10px;
+}
+
+.FootBanner {
+	margin-bottom: 9%;
+}
+
+.progress{
+	margin: 10px;
+}
+
+.competences{
+	text-align: center;
+}
+.card-title{
+	text-align: center;
+}
+.renforce{
+	font-weight : bold
+}
+#pastro{
+	width: 80%
+}
+#pbotan{
+	width: 60%
+}
+#pdefmal{
+	width: 55%
+}
+#petudedefmold{
+	width: 50%
+}
+#petuderunes{
+ 	width: 75%
+}

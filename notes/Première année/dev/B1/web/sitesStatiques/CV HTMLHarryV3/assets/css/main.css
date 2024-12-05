@@ -1,0 +1,96 @@
+/* This is a single-line comment */
+body{
+	font-family:cursive
+}
+
+img {
+	width: 100px;
+	height: 80px;
+	border-radius:25px
+
+}
+
+
+h1{     font-family:Arial;
+	text-align: center
+}
+tbody{
+	color: blue;
+	background-color: white
+}
+
+thead{
+	background-color: #f0f4f5;
+	color: DarkMagenta;
+  font-weight: bold;
+	
+}
+ul {
+  list-style-type: lower-alpha;
+}
+
+span{
+	font-weight: bold;
+}
+/* This is a single-line comment */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.etatCivil{
+color :chocolate
+}
+.periode  {
+font-style: italic
+} 
+
+.intituleStage {
+  color: #13c8ff;
+}
+
+#emploiSaisonnier {
+  color: #9cec9c;
+}
+
+#email {
+color :#008000
+}
+#annee{
+background-color: #40E0D0
+}
+
+#numtel {
+  text-decoration: underline rgb(191, 194, 1);
+}
+
+#forces_du_mal {
+  font-weight: bold;
+  color: red;
+}

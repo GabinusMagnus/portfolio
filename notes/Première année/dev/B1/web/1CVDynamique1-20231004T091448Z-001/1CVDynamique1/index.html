@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Harry Potter</title>
+    <link rel="icon" type="image/png" href="assets/images/boy.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" type="text/css" href="assets\css\main.css">
+    
+    <script src="javascript/cv.js"></script>
+    <script src="javascript/changePhoto.js"></script>
+    <script> var photo = document.getElementById("assets/images/boy.png");
+      var isImageLeft = false;
+      function deplacerImageGauche() {
+  if (!isImageLeft) {
+    photo.style.marginLeft = "0";
+    isImageLeft = true;
+  } else {
+    // Revenir au centre
+    photo.style.marginLeft = "auto";
+    isImageLeft = false;
+  }
+}
+
+// Ajouter un gestionnaire d'événement pour le double-clic
+photo.addEventListener("dblclick", deplacerImageGauche);
+
+// Fonction pour changer la police
+function changerPolice() {
+  document.body.style.fontFamily = "Helvetica, Arial, sans-serif";
+}
+
+// Ajoutez un gestionnaire d'événement pour l'événement de touche enfoncée
+document.addEventListener("keydown", changerPolice);
+      </script>
+  </head>
+  <body class="cv" id="bodyBg"  >
+    <div class="container" >
+      <div class="row">
+        <div class="col-12 banner">
+          <span>
+            <h2>Harry Potter</h2>
+          </span>
+        </div>
+        <div class="col-12 bannerimg">
+          <img src="assets/images/boy.png" id="photoCV" alt="..." class="rounded" onmouseenter="agranditPhoto()" onmouseout="imagenormale()" onclick="changePhoto()"  >
+        </div>
+      </div>
+      <div class="shadow p-3 mb-5 bg-white rounded" id="CardBg">
+        <div class="card-body">
+          <p><span class="renforce">Nom</span> : Potter</p>
+          <p><span class="renforce">Prénom</span> : Harry</p>
+          <p><span class="renforce" >Date de naissance </span> : <span id="dateNaiss" onmouseover="monage()" onmouseout="madate()">01/04/2000</span></p>
+          <p><span class="renforce">Numéro de téléphone</span> : 01 04 20 20 12</p>
+          <p><span class="renforce">Adresse</span> : 1 rue de Poudlard 22300 Chourave</p>
+          <p><span class="renforce">e-mail</span> : hpotter.ledantec@gmail.com</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 banner">
+          <h2>Parcours Scolaire</h2>
+        </div>
+      </div>
+      <table class="table tableCV">
+        <tbody>
+          <tr>
+            <td><span class="renforce">2019-2020</span></td>
+            <td>BTS SIO Premier année option Sorcellerie</td>
+          </tr>
+          <tr>
+            <td><span class="renforce">2018-2019</span></td>
+            <td>Optention du baccalaureat professionnel option Histoire de la Magie</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-12 banner">
+          <h2>Stages & Experiences Professionnelles</h2>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card shadow bg-white rounded espace">
+              <div class="card-body">
+                <h5 class="card-title">Juin 2017</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Stage : composition d'elixirs magiques au chateau du club de quidditch</h6>
+                <p class="card-text"></p>
+              </div>
+            </div>            
+          </div>
+          <div class="col-sm">
+            <div class="card shadow bg-white rounded espace">
+              <div class="card-body">
+                <h5 class="card-title">Janvier 2018</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Stage de sortilèges au tournoi des trois sorciers devant le château d'Anlwick </h6>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card shadow bg-white rounded espace" id="Marine">
+              <div class="card-body">
+                <h5 class="card-title">Septembre & Octobre 2018</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Stage de vol sur balai à la cathédrâle de Cesglouter </h6>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card shadow bg-white rounded espace">
+              <div class="card-body">
+                <h5 class="card-title">Juillet & Aout 2017/2018/2019</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Emploi saisonnier de métamorphoses : accueil des clients, entretien et nettoyage sanitaires, gestions des espaces verts</h6>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="competences" >
+            <div class="col-12 banner">
+              <h2>Compétences</h2>
+            </div>
+            <p>Astronomie</p>
+            <div class="Astronomie">
+              <div class="progress">
+                <div class="progress-bar" id="pastro"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <p>Botanique</p>
+            <div class="Botanique">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" id="pbotan"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <p>Défense contre les forces du mal</p>
+            <div class="Défense contre les forces du mal">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" id="pdefmal"  aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <p>Etude des Moldus</p>
+            <div class="Etude des Moldus">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" id="petudedefmold"  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <p>Etudes des Runes</p>
+            <div class="Etudes des Runes">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" id="petuderunes" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>  
+            </div>
+          </div>
+        <div class="FootBanner">
+          <div class="row">
+            <div class="espace">
+            </div>
+          </div>
+        </div>
+      </div>  
+   <footer>
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-12 banner">
+          <h4>Contact</h4>
+        </div>
+        <div class="col">
+          <p><span class="renforce">@mail</span> : <a href="mailto:hpotter.ledantec@gmail.com?subject=&cc=cc@example.com&bcc=bcc@example.com&body=Mail" >hpotter.ledantec@gmail.com</a></p> 
+        </div>
+        <div class="col">
+          <p><span class="renforce">télephone</span> : <a href="tel+33104202012">01.04.20.20.12</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+  
+
+   
+ 
+</html>
+
+
