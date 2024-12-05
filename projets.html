@@ -24,12 +24,37 @@
 <!-- Tab content -->
 <div id="AP1S1" class="tabcontent">
   <h3>Année 1, semestre 1</h3>
-  <div class="paper with-shadows">Infrastructure GELTRAM<br>Mise à disposition d'un serveur DHCP et web, dans deux vlans. C'est ici que l'on parle de collaboration et de documentation (GDrive, Trello,...).</div>
+  <div class="paper with-shadows">Infrastructure GELTRAM<br>
+    Configuration des équipements de routage (switch et routeur). Accès en SSH et réseau divisé en deux vlans.<br>
+    Mise à disposition d'un serveur DHCP et web.<br>
+    Documentation partagée sur Google Drive, répartition des tâches sur Trello.
+  </div>
 </div>
 
 <div id="AP1S2" class="tabcontent">
   <h3>Année 1, semestre 2</h3>
-  <div class="paper with-shadows">Amélioration de l'infrastructure GELTRAM.</div>
+  <div class="paper with-shadows">Amélioration de l'infrastructure GELTRAM.<br>
+    Conteneurs et machines virtuelles hébergés sur Proxmox.<br>
+    Installation de services supplémentaires :
+    <ul>
+      <li>Active Directory : Annuaire.</li>
+      <li>DNS : Résolution de nom</li>
+      <li>GLPI : Gestion de tickets.</li>
+      <lI>WSUS : Administration des mises à jour sur les postes Windows.</lI>
+      <li>FOG : Déploiement d'image sur les postes.</li>
+    </ul>
+    Complétion de l'infrastructure :
+    <ul>
+      <li>DMZ : Isolation des services vulnérables</li>
+      <li>Pare-feu : Installation de pfSense, filtrage du traffic entre le réseau local et extérieur.</li>
+    </ul>
+    Sécurisation des équipements de routage :
+    <ul>
+      <li>DHCP snooping : Filtrage des trames DHCP.</li>
+      <li>Spanning-tree : Empêcher les boucles.</li>
+      <li>Access Lists : Filtrer le traffic au plus près de la source ou de la destination.</li>
+    </ul>
+  </div>
 </div>
 
 <div id="AP2S1" class="tabcontent">
