@@ -428,3 +428,13 @@ blockquote {
   height: 50px;
   border-radius: 50%;
 }
+
+.row {
+  display: flex;
+}
+
+.column {
+  text-align: justify;
+  padding: 25px;
+  flex: 50%;
+}
