@@ -24,8 +24,9 @@
 
 <!-- Contenu des onglets -->
 <div id="AP1S1" class="tabcontent">
-  <h3>Année 1, semestre 1</h3>
-  <div class="paper with-shadows">Infrastructure GELTRAM<br>
+  <h3>Première, premier semestre</h3>
+  <div class="paper with-shadows">
+    <h4>Infrastructure GELTRAM</h4>
     Configuration des équipements de routage (switch et routeur).
     Réseau divisé en deux vlans.<br>
     Mise à disposition d'un serveur DHCP et web.<br>
@@ -35,8 +36,9 @@
 </div>
 
 <div id="AP1S2" class="tabcontent">
-  <h3>Année 1, semestre 2</h3>
-  <div class="paper with-shadows">Amélioration de l'infrastructure GELTRAM.<br>
+  <h3>Première nnée, second semestre</h3>
+  <div class="paper with-shadows">
+    <h4>Amélioration de l'infrastructure GELTRAM.</h4>
     Conteneurs et machines virtuelles hébergés sur Proxmox.<br>
     Installation de services supplémentaires :
     <ul>
@@ -62,15 +64,33 @@
 </div>
 
 <div id="AP2S1" class="tabcontent">
-  <h3>Atelier, premier semestre de la deuxième année</h3>
-  <div class="paper with-shadows">Infrastructure GSB :
+  <h3>Seconde année, premier semestre</h3>
+  <div class="paper with-shadows"><h4>Infrastructure GSB :</h4>
     Redondance des services :
     <ul>
-      Service web : Deux serveurs répliqués sur Corosync.
-      Service SQL : Deux serveurs répliqués sur Corosync.
-      DHCP : Plages DHCP répliqués sur deux serveurs.
-      Active Directory : Service AD répliqué sur deux serveurs.
+      <li>Service web : Deux serveurs répliqués sur Corosync.</li>
+      <li>Service SQL : Deux serveurs répliqués sur Corosync.</li>
+      <li>DHCP : Plages DHCP répliqués sur deux serveurs.</li>
+      <li>Active Directory : Service AD répliqué sur deux serveurs.</li>
     </ul>
   </div>
-  <img src="ressources/GSB_2.jpg" alt="Schéma infrastructure GSB Premier semestre">
+  <img src="ressources/GSB_1.jpg" alt="Schéma infrastructure GSB Premier semestre">
+</div>
+
+<div id="AP2S2_1" class="tabcontent">
+  <h3>Atelier, second semestre de la deuxième année</h3>
+  <div class="paper with-shadows">
+    <h4>Infrastructure GSB :</h4>
+    Haute-disponibilité :
+    <ul>
+      <li>Répartition de charge : HAProxy</li>
+    </ul>
+    Supervision :
+    <ul>
+      <li>Service de supervision : Zabbix</li>
+      <li>Service d'inventaire : PHP-IPAM</li>
+      <li>SIEM : Wazuh</li>
+    </ul>
+  </div>
+  <img src="ressources/GSB_2.jpg" alt="Schéma infrastructure GSB Second semestre">
 </div>
