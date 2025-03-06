@@ -18,28 +18,54 @@
 
 <div class="tab">
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S1')">Première année,<br>premier semestre</button>
-  <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S2')">Première année,<br>second semestre</button>
+  <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S2')">Première année,<br>second semestre </button>
+  <button class="tablinks" onclick="ouvreOnglet(event, 'AP_dev')">Première année, développement SLAM</button>
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S1')">Deuxième année,<br>premier semestre</button>
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S2_1')">Deuxième année,<br>second semestre</button>
 </div>
 
 <!-- Contenu des onglets -->
 <div id="AP1S1" class="tabcontent">
-  <h3>Première, premier semestre</h3>
+  <h3>Première année, premier semestre </h3>
   <div class="paper with-shadows">
     <h4>Infrastructure GELTRAM</h4>
+    <div class="paper">
     Configuration des équipements de routage (switch et routeur).
     Réseau divisé en deux vlans.<br>
     Mise à disposition d'un serveur DHCP et web.<br>
     Documentation partagée sur Google Drive, répartition des tâches sur Trello.
+    </div>
+    <br>
+    <img height=300 src="ressources/GELTRAM_1.png" alt="schéma de l'infrastructure GELTRAM">
   </div>
-  <img src="ressources/GELTRAM_1.png" alt="schéma de l'infrastructure GELTRAM">
+</div>
+
+<div id="AP_dev" class="tabcontent">
+  <h3>Première année, développement (SLAM)</h3>
+  <div class="paper with-shadows">
+    <h4>Wiki collaboratif :</h4>
+    <div class="paper">
+    Gestion des droits :
+    <ul>
+      <li>Droits et utilisateurs définis dans une base de données MySQL.</li>
+      <li>Interface de connexion sécurisée en PHP.</li>
+    </ul>
+    Environnement personnel :
+    <ul>
+      <li>WAMP : pile Apache/MySQL/PHP pour Windows.</li>
+      <li>Visual Studio Code : Environnement de développement intégré.</li>
+    </ul>
+    </div>
+    <br>
+    <img height="300">
+  </div>
 </div>
 
 <div id="AP1S2" class="tabcontent">
   <h3>Première année, second semestre</h3>
   <div class="paper with-shadows">
     <h4>Amélioration de l'infrastructure GELTRAM.</h4>
+    <div class="paper">
     Conteneurs et machines virtuelles hébergés sur Proxmox.<br>
     Installation de services supplémentaires :
     <ul>
@@ -61,12 +87,21 @@
       <li>Access Lists : Filtrer le traffic au plus près de la source ou de la destination.</li>
     </ul>
   </div>
-  <img src="ressources/GELTRAM_2.png" alt="Schéma de l'infrastructure GELTRAM Second semestre">
+  <br>
+  <img height=300 src="ressources/GELTRAM_2.png" alt="Schéma de l'infrastructure GELTRAM Second semestre">
+  </div>
+</div>
+
+<div id="AP1S2_dev" class="tabcontent">
+  <h3>Première année, second semestre </h3>
+  <div class
 </div>
 
 <div id="AP2S1" class="tabcontent">
   <h3>Seconde année, premier semestre</h3>
-  <div class="paper with-shadows"><h4>Infrastructure GSB :</h4>
+  <div class="paper">
+    <h4>Infrastructure GSB :</h4>
+  <div class="paper with-shadows">
     Redondance des services :
     <ul>
       <li>Service web : Deux serveurs répliqués sur Corosync.</li>
@@ -75,7 +110,9 @@
       <li>Active Directory : Service AD répliqué sur deux serveurs.</li>
     </ul>
   </div>
-  <img src="ressources/GSB_1.jpg" alt="Schéma infrastructure GSB Premier semestre">
+  <br>
+  <img width=500 src="ressources/GSB_1.jpg" alt="Schéma infrastructure GSB Premier semestre">
+  </div>
 </div>
 
 <div id="AP2S2_1" class="tabcontent">
@@ -93,7 +130,8 @@
       <li>SIEM : Wazuh</li>
     </ul>
   </div>
-  <img src="ressources/GSB_2.jpg" alt="Schéma infrastructure GSB Second semestre">
+  <br>
+  <img width=600 src="ressources/GSB_2.jpg" alt="Schéma infrastructure GSB Second semestre">
 </div>
 
 <div id="AP2S2_2" class="tabcontent">
@@ -105,4 +143,5 @@
       <li>Bastion Apache Guacamole pour unifier l'administration des serveurs</li>
     </ul>
   </div>
+  <br>
 </div>
