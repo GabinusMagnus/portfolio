@@ -392,6 +392,7 @@ blockquote {
   cursor: pointer;
   padding: 6px 6px;
   transition: 0.3s;
+  margin-right: 10px;
 }
 
 /* Change background color of buttons on hover */
@@ -421,7 +422,7 @@ blockquote {
   cursor: pointer;
   padding: 14px 144px;
   font-size: 17px;
-  width: 25%;
+  width: flexbox;
 }
 
 /* Effet d'évanouissement des onglets */

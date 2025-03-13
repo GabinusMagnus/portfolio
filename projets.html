@@ -20,8 +20,8 @@
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S1')">Première année,<br>premier semestre</button>
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP1S2')">Première année,<br>second semestre </button>
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP_dev')">Première année, développement SLAM</button>
-  <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S1')">Deuxième année,<br>premier semestre</button>
-  <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S2_1')">Deuxième année,<br>second semestre</button>
+  <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S1')">Seconde année,<br>premier semestre</button>
+  <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S2_1')">Seconde année,<br>second semestre</button>
 </div>
 
 <!-- Contenu des onglets -->
@@ -92,11 +92,6 @@
   </div>
 </div>
 
-<div id="AP1S2_dev" class="tabcontent">
-  <h3>Première année, second semestre </h3>
-  <div class
-</div>
-
 <div id="AP2S1" class="tabcontent">
   <h3>Seconde année, premier semestre</h3>
   <div class="paper">
@@ -104,8 +99,8 @@
   <div class="paper with-shadows">
     Redondance des services :
     <ul>
-      <li>Service web : Deux serveurs répliqués sur Corosync.</li>
-      <li>Service SQL : Deux serveurs répliqués sur Corosync.</li>
+      <li>Service web : Grappe de serveurs Apache répliqués sur Corosync.</li>
+      <li>Service de base de données : Grappe de serveurs MySQL répliqués sur Corosync.</li>
       <li>DHCP : Plages DHCP répliqués sur deux serveurs.</li>
       <li>Active Directory : Service AD répliqué sur deux serveurs.</li>
     </ul>
