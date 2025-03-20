@@ -22,6 +22,7 @@
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S1')">Seconde année,<br>premier semestre</button>
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S2_1')">Seconde année,<br>second semestre</button>
   <button class="tablinks" onclick="ouvreOnglet(event, 'AP2S2_2')">Second semestre, dernier atelier</button>
+  <button class="tablinks" onclick="ouvreOnglet(event, 'portfolio')">Développement du portfolio et documentation</button>
 </div>
 
 <!-- Contenu des onglets -->
@@ -33,8 +34,10 @@
     Configuration des équipements de routage (switch et routeur).
     Réseau divisé en deux vlans.<br>
     Mise à disposition d'un serveur DHCP et web.<br>
-    Documentation partagée sur Google Drive, répartition des tâches sur Trello.
+    Documentation partagée sur Google Drive, répartition des tâches sur Trello. (exemple :)
     </div>
+    <!-- <img height="150" src="ressources/markdown_exemple.png" alt="exemple markdown"> -->
+     <a href="ressources/securiser_apache.html">exemple de doc</a>
     <br>
     <img height=300 src="ressources/GELTRAM_1.png" alt="schéma de l'infrastructure GELTRAM">
   </div>
@@ -101,7 +104,7 @@
     <ul>
       <li>Service de supervision : Zabbix</li>
       <li>Service d'inventaire : PHP-IPAM</li>
-      <li>SIEM : Wazuh</li>
+      <li>SIEM : Wazuh (active responses, centralisation des logs)</li>
     </ul>
   </div>
   <br>
@@ -120,4 +123,25 @@
   </div>
   <br>
   <img width=600 src="ressources/GSB_3.jpg" alt="Schéma infrastructure GSB Second semestre">
+</div>
+
+<div id="portfolio" class="tabcontent">
+<h3>Environnement de travail personnel :</h3>
+<div class="paper with-shadows">
+  <h4>Documentation :</h4>
+  <ul>
+    <li>Markdown : éditeur local
+    <img width="200" src="ressources/markdown_exemple.png">
+    <a href="ressources/securiser_apache.html">Exemple de page.</a>
+    <li>Synchronisation sur cloud personnel : disponibilité, possibilité de recherche par service...
+      <img width="200" src="ressources/drive.png">
+    </li>
+    <li>Environnement intégré de développement : Visual Studio Code</li>
+    <li>Synchronisation : dépôt Github synchronisé</li>
+    <li>Disponibilité : Hébergement en ligne</li>
+  </ul>
+  <br>
+    Processus de développement :
+    <img width=300 src="ressources/processus_portfolio.jpg" alt="processus portfolio">
+</div>
 </div>
